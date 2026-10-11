@@ -1,0 +1,124 @@
+@import url("base.css");
+
+/* Profile page: identity card and editable student details */
+.profile-layout {
+  display: grid;
+  grid-template-columns: minmax(250px, .75fr) minmax(0, 1.6fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.profile-summary {
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+}
+
+.profile-cover {
+  height: 112px;
+  background: linear-gradient(125deg, #655cdb, #9b8deb);
+}
+
+.profile-main {
+  padding: 0 22px 23px;
+}
+
+.profile-avatar {
+  width: 76px;
+  height: 76px;
+  margin: -38px auto 13px;
+  border: 5px solid #fff;
+  border-radius: 24px;
+  background: #f0eaff;
+  color: #6a50b5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 800;
+  position: relative;
+}
+
+.profile-main h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.profile-main>.muted {
+  font-size: 11px;
+}
+
+.profile-tag {
+  display: inline-flex;
+  margin-top: 13px;
+  background: #efedff;
+  color: #655bd2;
+  font-size: 10px;
+  font-weight: 700;
+  border-radius: 6px;
+  padding: 6px 9px;
+}
+
+.profile-divider {
+  height: 1px;
+  background: var(--line);
+  margin: 22px 0;
+}
+
+.profile-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px 10px;
+  text-align: left;
+}
+
+.profile-meta span {
+  font-size: 10px;
+  color: #9699aa;
+}
+
+.profile-meta strong {
+  font-size: 11px;
+  text-align: right;
+}
+
+.profile-details {
+  padding: 390px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.profile-details .form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  border-top: 1px solid var(--line);
+  padding-top: 19px;
+  margin-top: 20px;
+}
+
+@media (max-width: 1000px) {
+  .profile-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-main {
+    max-width: 520px;
+    margin: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .profile-details {
+    padding: 17px;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+}

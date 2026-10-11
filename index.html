@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusLeave | Student Portal</title>
+  <link rel="stylesheet" href="css/login.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body class="login-page">
+  <main class="login-shell">
+    <section class="login-intro">
+      <div class="brand brand-light"><span class="brand-mark">CL</span><span>CampusLeave</span></div>
+      <div class="intro-copy">
+        <p class="eyebrow">STUDENT SERVICES PORTAL</p>
+        <h1>Your campus life,<br><span>made simpler.</span></h1>
+        <p>Manage leave applications, check request updates, and stay connected with your college notices in one place.</p>
+      </div>
+      <div class="intro-footer">A simpler way to manage student leave.</div>
+    </section>
+    <section class="login-panel">
+      <div class="mobile-brand brand"><span class="brand-mark">CL</span><span>CampusLeave</span></div>
+      <div class="login-heading">
+        <p class="eyebrow">WELCOME BACK</p>
+        <h2>Sign in to your account</h2>
+        <p>Enter your student credentials to continue.</p>
+      </div>
+      <form id="loginForm" class="login-form">
+        <label for="studentId">Student ID</label>
+        <input id="studentId" name="studentId" type="text" placeholder="e.g. CS101" autocomplete="username" required>
+        <label for="password">Passwrod</label>
+        <div class="password-wrap">
+          <input id="password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required>
+          <button type="button" class="password-toggle" id="togglePassword" aria-label="Show password">Show</button>
+        </div>
+        <div class="form-options">
+          <label class="check-label"><input type="checkbox" id="rememberMe"> <span>Remember me</span></label>
+          <button type="button" class="text-button" id="forgotPassword">Forgot password?</button>
+        </div>
+        <button class="btn btn-primary btn-full" type="submit">Sign in <span aria-hidden="true">→</span></button>
+        <p class="form-message" id="loginMessage" role="status"></p>
+      </form>
+      <p class="login-help">Having trouble signing in? Contact your college administration.</p>
+      <footer class="login-copyright">© 2026 CampusLeave · Student Portal</footer>
+    </section>
+  </main>
+</body>
+</html>

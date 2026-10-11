@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile | CampusLeave</title>
+  <link rel="stylesheet" href="css/profile.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body class="app-page">
+  <div class="app-layout">
+    <aside class="sidebar" id="sidebar"><a class="brand" href="dashboard.html"><span
+          class="brand-mark">CL</span><span>CampusLeave</span></a>
+      <p class="sidebar-label">WORKSPACE</p>
+      <nav class="side-nav" aria-label="Main navigation"><a class="nav-link" href="dashboard.html"><span>▦</span>
+          Dashboard</a><a class="nav-link" href="apply-leave.html"><span>＋</span> Apply for Leave</a><a class="nav-link"
+          href="leave-history.html"><span>▤</span> Leave History</a><a class="nav-link active"
+          href="profile.html"><span>◎</span> My Profile</a><a class="nav-link" href="notices.html"><span>◷</span>
+          Notices <span class="nav-count">3</span></a></nav>
+      <div class="sidebar-bottom">
+        <div class="mini-profile">
+          <div class="avatar">NR</div>
+          <div><strong>Nandini Rawat</strong><span>First Year · CSE</span></div>
+        </div><a class="nav-link logout-link" href="index.html"><span>↪</span> Log out</a>
+      </div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar"><button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+        <div class="breadcrumb">Workspace <span>/</span> My Profile</div>
+        <div class="topbar-actions"><button class="icon-button" type="button"
+            aria-label="Notifications">♧<i></i></button>
+          <div class="topbar-user">
+            <div class="avatar avatar-small">NR</div><span>Nandini Rawat</span>
+          </div>
+        </div>
+      </header>
+      <div class="page-content">
+        <section class="page-title">
+          <p class="eyebrow">STUDENT INFORMATION</p>
+          <h1>My profile</h1>
+          <p class="muted">View and manage your student details.</p>
+        </section>
+        <div class="profile-layout">
+          <section class="panel profile-summary">
+            <div class="profile-cover"></div>
+            <div class="profile-main">
+              <div class="profile-avatar">NR</div>
+              <h2>Nandini Rawat</h2>
+              <p class="muted">B.Tech · Computer Science & Engineering</p><span class="profile-tag">First Year
+                Student</span>
+              <div class="profile-divider"></div>
+              <div class="profile-meta"><span>Student
+                  ID</span><strong>CS101</strong><span>Section</span><strong>A</strong><span>Academic
+                  year</span><strong>2026–27</strong></div>
+            </div>
+          </section>
+          <section class="panel profile-details">
+            <div class="panel-heading">
+              <div>
+                <h2>Personal details</h2>
+                <p class="muted">Your registered information.</p>
+              </div><button type="button" class="btn btn-secondary" id="editProfile">Edit profile</button>
+            </div>
+            <form id="profileForm">
+              <div class="details-grid">
+                <div class="field"><label for="profileName">Full name</label><input id="profileName" name="profileName"
+                    value="Nandini Rawat" readonly></div>
+                <div class="field"><label for="profileEmail">College email</label><input id="profileEmail"
+                    name="profileEmail" type="email" value="nandinirawat@college.edu" readonly></div>
+                <div class="field"><label for="profilePhone">Phone number</label><input id="profilePhone"
+                    name="profilePhone" type="tel" value="+91 98765 43210" readonly></div>
+                <div class="field"><label for="profileHostel">Hostel</label><input id="profileHostel"
+                    name="profileHostel" value="Hostel A · Room 214" readonly></div>
+                <div class="field"><label for="profileGuardian">Guardian name</label><input id="profileGuardian"
+                    name="profileGuardian" value="Rajesh Rawat" readonly></div>
+                <div class="field"><label for="profileCourse">Programme</label><input id="profileCourse"
+                    name="profileCourse" value="B.Tech Computer Science" readonly></div>
+              </div>
+              <div class="form-actions" id="profileActions" hidden><button type="button" class="btn btn-secondary"
+                  id="cancelEdit">Cancel</button><button type="submit" class="btn btn-primary">Save changes</button>
+              </div>
+              <p class="form-message" id="profileMessage" role="status"></p>
+            </form>
+          </section>
+        </div>
+        <footer class="page-footer">© 2026 CampusLeave <span>Made for a smoother campus experience.</span></footer>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

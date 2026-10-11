@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leave History | CampusLeave</title>
+  <link rel="stylesheet" href="css/leave-history.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body class="app-page">
+  <div class="app-layout">
+    <aside class="sidebar" id="sidebar"><a class="brand" href="dashboard.html"><span class="brand-mark">CL</span><span>CampusLeave</span></a><p class="sidebar-label">WORKSPACE</p><nav class="side-nav" aria-label="Main navigation"><a class="nav-link" href="dashboard.html"><span>▦</span> Dashboard</a><a class="nav-link" href="apply-leave.html"><span>＋</span> Apply for Leave</a><a class="nav-link active" href="leave-history.html"><span>▤</span> Leave History</a><a class="nav-link" href="profile.html"><span>◎</span> My Profile</a><a class="nav-link" href="notices.html"><span>◷</span> Notices <span class="nav-count">3</span></a></nav><div class="sidebar-bottom"><div class="mini-profile"><div class="avatar">NR</div><div><strong>Nandini Rawat</strong><span>First Year · CSE</span></div></div><a class="nav-link logout-link" href="index.html"><span>↪</span> Log out</a></div></aside>
+    <main class="main-content"><header class="topbar"><button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button><div class="breadcrumb">Workspace <span>/</span> Leave History</div><div class="topbar-actions"><button class="icon-button" type="button" aria-label="Notifications">♧<i></i></button><div class="topbar-user"><div class="avatar avatar-small">NR</div><span>Nandini Rawat</span></div></div></header>
+      <div class="page-content"><section class="page-title title-with-action"><div><p class="eyebrow">YOUR RECORDS</p><h1>Leave history</h1><p class="muted">Track all your leave applications and their latest status.</p></div><a class="btn btn-primary" href="apply-leave.html">＋ New application</a></section>
+        <section class="stats-grid history-stats"><article class="stat-card"><p class="stat-label">Total applications</p><div class="stat-value">6</div><div class="stat-foot">All time</div></article><article class="stat-card"><p class="stat-label">Approved</p><div class="stat-value">4</div><div class="stat-foot">Requests accepted</div></article><article class="stat-card"><p class="stat-label">Pending</p><div class="stat-value">1</div><div class="stat-foot">Awaiting review</div></article><article class="stat-card"><p class="stat-label">Rejected</p><div class="stat-value">1</div><div class="stat-foot">Requests not approved</div></article></section>
+        <section class="panel history-panel"><div class="panel-heading"><div><h2>All applications</h2><p class="muted">Search or filter your submitted requests.</p></div></div>
+          <div class="table-tools"><label class="search-wrap" for="historySearch"><span aria-hidden="true">⌕</span><input id="historySearch" type="search" placeholder="Search applications..."></label><label class="filter-wrap" for="statusFilter"><span class="sr-only">Filter by status</span><select id="statusFilter"><option value="all">All statuses</option><option value="approved">Approved</option><option value="pending">Pending</option><option value="rejected">Rejected</option></select></label></div>
+          <div class="table-wrap"><table id="historyTable"><thead><tr><th>Application ID</th><th>Leave type</th><th>Start date</th><th>End date</th><th>Days</th><th>Reason</th><th>Status</th></tr></thead><tbody>
+            <tr data-status="pending"><td>CL-2026-014</td><td>Personal</td><td>12 Oct 2026</td><td>13 Oct 2026</td><td>2</td><td>Family commitment</td><td><span class="status status-pending">Pending</span></td></tr>
+            <tr data-status="approved"><td>CL-2026-009</td><td>Medical</td><td>21 Sep 2026</td><td>22 Sep 2026</td><td>2</td><td>Medical appointment</td><td><span class="status status-approved">Approved</span></td></tr>
+            <tr data-status="approved"><td>CL-2026-004</td><td>Personal</td><td>03 Aug 2026</td><td>03 Aug 2026</td><td>1</td><td>Family event</td><td><span class="status status-approved">Approved</span></td></tr>
+            <tr data-status="rejected"><td>CL-2026-003</td><td>Academic</td><td>19 Jul 2026</td><td>20 Jul 2026</td><td>2</td><td>Personal work</td><td><span class="status status-rejected">Rejected</span></td></tr>
+            <tr data-status="approved"><td>CL-2026-002</td><td>Medical</td><td>11 Jun 2026</td><td>11 Jun 2026</td><td>1</td><td>Medical rest</td><td><span class="status status-approved">Approved</span></td></tr>
+            <tr data-status="approved"><td>CL-2026-001</td><td>Personal</td><td>18 May 2026</td><td>18 May 2026</td><td>1</td><td>Family visit</td><td><span class="status status-approved">Approved</span></td></tr>
+          </tbody></table><p id="noResults" class="no-results" hidden>No applications match your search.</p></div>
+        </section>
+        <footer class="page-footer">© 2026 CampusLeave <span>Made for a smoother campus experience.</span></footer>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

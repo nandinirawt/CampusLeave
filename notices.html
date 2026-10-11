@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Notices | CampusLeave</title>
+  <link rel="stylesheet" href="css/notices.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body class="app-page">
+  <div class="app-layout">
+    <aside class="sidebar" id="sidebar"><a class="brand" href="dashboard.html"><span class="brand-mark">CL</span><span>CampusLeave</span></a><p class="sidebar-label">WORKSPACE</p><nav class="side-nav" aria-label="Main navigation"><a class="nav-link" href="dashboard.html"><span>▦</span> Dashboard</a><a class="nav-link" href="apply-leave.html"><span>＋</span> Apply for Leave</a><a class="nav-link" href="leave-history.html"><span>▤</span> Leave History</a><a class="nav-link" href="profile.html"><span>◎</span> My Profile</a><a class="nav-link active" href="notices.html"><span>◷</span> Notices <span class="nav-count">3</span></a></nav><div class="sidebar-bottom"><div class="mini-profile"><div class="avatar">NR</div><div><strong>Nandini Rawat</strong><span>First Year · CSE</span></div></div><a class="nav-link logout-link" href="index.html"><span>↪</span> Log out</a></div></aside>
+    <main class="main-content"><header class="topbar"><button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button><div class="breadcrumb">Workspace <span>/</span> Notices</div><div class="topbar-actions"><button class="icon-button" type="button" aria-label="Notifications">♧<i></i></button><div class="topbar-user"><div class="avatar avatar-small">NR</div><span>Nandini Rawat</span></div></div></header>
+      <div class="page-content"><section class="page-title"><p class="eyebrow">CAMPUS UPDATES</p><h1>Notices & announcements</h1><p class="muted">Stay informed about important academic and campus updates.</p></section>
+        <section class="featured-notice"><div class="featured-copy"><span class="notice-category">IMPORTANT UPDATE</span><p class="notice-date">08 OCTOBER 2026</p><h2>Mid-semester attendance reminder</h2><p>Please review your attendance record before submitting a leave application. Approved leave may still require supporting documentation under your department's policy.</p><button class="btn btn-light" type="button" data-read-more>Read full notice <span aria-hidden="true">→</span></button></div><div class="featured-art" aria-hidden="true"><div class="art-circle"></div><div class="art-paper"><span></span><span></span><span></span><b>✓</b></div></div></section>
+        <div class="notice-toolbar"><div><h2>All notices</h2><p class="muted">Recent announcements from the college administration.</p></div><label class="search-wrap" for="noticeSearch"><span aria-hidden="true">⌕</span><input id="noticeSearch" type="search" placeholder="Search notices..."></label></div>
+        <section class="notice-grid" id="noticeGrid">
+          <article class="panel notice-card"><div class="notice-card-top"><span class="notice-type type-academic">Academic</span><span class="notice-date">06 OCT 2026</span></div><h3>Leave applications during examinations</h3><p>Students requesting leave during examination periods may need additional approval from their department.</p><button type="button" class="inline-link read-more" data-read-more>Read more →</button></article>
+          <article class="panel notice-card"><div class="notice-card-top"><span class="notice-type type-policy">Policy</span><span class="notice-date">04 OCT 2026</span></div><h3>Updated leave application guidelines</h3><p>Please submit applications in advance and ensure all required fields are completed before submission.</p><button type="button" class="inline-link read-more" data-read-more>Read more →</button></article>
+          <article class="panel notice-card"><div class="notice-card-top"><span class="notice-type type-hostel">Hostel</span><span class="notice-date">02 OCT 2026</span></div><h3>Hostel outing and leave records</h3><p>Students leaving campus overnight should follow the hostel's established sign-out process.</p><button type="button" class="inline-link read-more" data-read-more>Read more →</button></article>
+          <article class="panel notice-card"><div class="notice-card-top"><span class="notice-type type-calendar">Calendar</span><span class="notice-date">29 SEP 2026</span></div><h3>Academic calendar update</h3><p>Check the academic calendar for upcoming holidays, internal assessments, and department events.</p><button type="button" class="inline-link read-more" data-read-more>Read more →</button></article>
+          <article class="panel notice-card"><div class="notice-card-top"><span class="notice-type type-student">Student services</span><span class="notice-date">25 SEP 2026</span></div><h3>Keep your profile information current</h3><p>Make sure your emergency contact and college email are up to date in your student profile.</p><button type="button" class="inline-link read-more" data-read-more>Read more →</button></article>
+          <article class="panel notice-card"><div class="notice-card-top"><span class="notice-type type-attendance">Attendance</span><span class="notice-date">20 SEP 2026</span></div><h3>Attendance review for first-year students</h3><p>First-year students are encouraged to check attendance regularly and contact their faculty advisor with questions.</p><button type="button" class="inline-link read-more" data-read-more>Read more →</button></article>
+        </section>
+        <p class="no-results" id="noticeNoResults" hidden>No notices match your search.</p>
+        <footer class="page-footer">© 2026 CampusLeave <span>Made for a smoother campus experience.</span></footer>
+      </div>
+    </main>
+  </div>
+  <dialog id="noticeDialog" class="notice-dialog"><div class="dialog-head"><h2>Notice details</h2><button type="button" id="closeNotice" class="icon-button" aria-label="Close notice">×</button></div><p id="dialogNoticeText">Please check with your department office for more information about this notice.</p><button type="button" id="dialogOk" class="btn btn-primary">Close</button></dialog>
+</body>
+</html>

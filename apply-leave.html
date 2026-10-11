@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply for Leave | CampusLeave</title>
+  <link rel="stylesheet" href="css/apply-leave.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body class="app-page">
+  <div class="app-layout">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="dashboard.html"><span class="brand-mark">CL</span><span>CampusLeave</span></a>
+      <p class="sidebar-label">WORKSPACE</p>
+      <nav class="side-nav" aria-label="Main navigation">
+        <a class="nav-link" href="dashboard.html"><span>▦</span> Dashboard</a><a class="nav-link active"
+          href="apply-leave.html"><span>＋</span> Apply for Leave</a><a class="nav-link"
+          href="leave-history.html"><span>▤</span> Leave History</a><a class="nav-link"
+          href="profile.html"><span>◎</span> My Profile</a><a class="nav-link" href="notices.html"><span>◷</span>
+          Notices <span class="nav-count">3</span></a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="mini-profile">
+          <div class="avatar">NR</div>
+          <div><strong>Nandini Rawat</strong><span>First Year · CSE</span></div>
+        </div><a class="nav-link logout-link" href="index.html"><span>↪</span> Log out</a>
+      </div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar"><button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+        <div class="breadcrumb">Workspace <span>/</span> Apply for Leave</div>
+        <div class="topbar-actions"><button class="icon-button" type="button"
+            aria-label="Notifications">♧<i></i></button>
+          <div class="topbar-user">
+            <div class="avatar avatar-small">NR</div><span>Nandini Rawat</span>
+          </div>
+        </div>
+      </header>
+      <div class="page-content narrow-content">
+        <section class="page-title">
+          <p class="eyebrow">LEAVE MANAGEMENT</p>
+          <h1>Apply for leave</h1>
+          <p class="muted">Fill in the details below to submit a new leave request.</p>
+        </section>
+        <div class="form-layout">
+          <section class="panel application-panel">
+            <div class="panel-heading">
+              <div>
+                <h2>Leave application form</h2>
+                <p class="muted">Fields marked with * are required.</p>
+              </div><span class="form-step">STEP 1 OF 1</span>
+            </div>
+            <form id="leaveForm">
+              <div class="form-grid">
+                <div class="field"><label for="fullName">Student name *</label><input id="fullName" name="fullName"
+                    value="Nandini Rawat" required></div>
+                <div class="field"><label for="studentNumber">Student ID *</label><input id="studentNumber"
+                    name="studentNumber" value="CS101" required></div>
+                <div class="field"><label for="leaveType">Select leave type *</label><select id="leaveType"
+                    name="leaveType" required>
+                    <option value="">Choose a leave type</option>
+                    <option>Medical</option>
+                    <option>Personal</option>
+                    <option>Academic</option>
+                    <option>Emergency</option>
+                  </select></div>
+                <div class="field"><label for="contactNumber">Emergency contact number *</label><input
+                    id="contactNumber" name="contactNumber" type="tel" placeholder="+91 98765 43210" required></div>
+                <div class="field"><label for="startDate">Start date *</label><input id="startDate" name="startDate"
+                    type="date" required></div>
+                <div class="field"><label for="endDate">End date *</label><input id="endDate" name="endDate" type="date"
+                    required></div>
+                <div class="field field-full"><label for="reason">Reason for leave *</label><textarea id="reason"
+                    name="reason" rows="4" placeholder="Please explain the reason for your leave..."
+                    required></textarea><span class="field-hint">Please provide enough detail for your request to be
+                    reviewed.</span></div>
+                <div class="field field-full"><label for="document">Supporting document <span
+                      class="optional">(optional)</span></label>
+                  <div class="upload-box"><input id="document" name="document" type="file"
+                      accept=".pdf,.jpg,.jpeg,.png"><span class="upload-note">PDF, JPG or PNG · Max 5 MB</span></div>
+                </div>
+              </div>
+              <div class="form-actions"><button type="reset" class="btn btn-secondary">Reset form</button><button
+                  type="button" class="btn btn-primary">Submit application <span aria-hidden="true">→</span></button>
+              </div>
+              <p id="leaveMessage" class="form-message" role="status"></p>
+            </form>
+          </section>
+          <aside class="form-aside">
+            <section class="panel balance-panel"><span class="aside-icon">◷</span>
+              <h2>Your leave balance</h2>
+              <p class="muted">Current academic year</p>
+              <div class="balance-number">9 <span>days remaining</span></div>
+              <div class="balance-track"><span></span></div>
+              <div class="balance-meta"><span>3 days used</span><span>12 days total</span></div>
+            </section>
+            <section class="panel tips-panel">
+              <h2>Before you submit</h2>
+              <ul>
+                <li>Submit your request at least 3 days in advance where possible.</li>
+                <li>Attach supporting documents for medical leave.</li>
+                <li>Wait for approval before making final plans.</li>
+                <li>Check your leave history for status updates.</li>
+              </ul><a class="inline-link" href="notices.html">Read leave policy →</a>
+            </section>
+          </aside>
+        </div>
+        <footer class="page-footer">© 2026 CampusLeave <span>Made for a smoother campus experience.</span></footer>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

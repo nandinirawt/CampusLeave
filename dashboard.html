@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | CampusLeave</title>
+  <link rel="stylesheet" href="css/dashboard.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body class="app-page">
+  <div class="app-layout">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="dashboard.html"><span class="brand-mark">CL</span><span>CampusLeave</span></a>
+      <p class="sidebar-label">WORKSPACE</p>
+      <nav class="side-nav" aria-label="Main navigation">
+        <a class="nav-link active" href="dashboard.html"><span>▦</span> Dashboard</a>
+        <a class="nav-link" href="apply-leave.html"><span>＋</span> Apply for Leave</a>
+        <a class="nav-link" href="leave-history.html"><span>▤</span> Leave History</a>
+        <a class="nav-link" href="profile.html"><span>◎</span> My Profile</a>
+        <a class="nav-link" href="notices.html"><span>◷</span> Notices <span class="nav-count">3</span></a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="mini-profile">
+          <div class="avatar">NR</div>
+          <div><strong>Nandini Rawat</strong><span>First Year · CSE</span></div>
+        </div>
+        <a class="nav-link logout-link" href="index.html"><span>↪</span> Log out</a>
+      </div>
+    </aside>
+    <main class="main-content">
+      <header class="topbar">
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+        <div class="breadcrumb">Workspace <span>/</span> Dashboard</div>
+        <div class="topbar-actions"><button class="icon-button" type="button"
+            aria-label="Notifications">♧<i></i></button>
+          <div class="topbar-user">
+            <div class="avatar avatar-small">NR</div><span>Nandini Rawat</span>
+          </div>
+        </div>
+      </header>
+      <div class="page-content">
+        <section class="welcome-row">
+          <div>
+            <p class="eyebrow">FRIDAY, 9 OCTOBER 2026</p>
+            <h1>Good evening, Nandini <span class="wave">✦</span></h1>
+            <p class="muted">Here's what's happening with your leave account today.</p>
+          </div>
+          <a class="btn btn-primary" href="apply-leave.html">＋ Apply for leave</a>
+        </section>
+        <section class="stats-grid" aria-label="Leave summary">
+          <article class="stat-card">
+            <div class="stat-top"><span class="stat-icon lavender">▤</span><span class="stat-trend">This year</span>
+            </div>
+            <p class="stat-label">Total leave allowance</p>
+            <div class="stat-value">12 <span>days</span></div>
+            <div class="stat-foot">Your annual allowance</div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-top"><span class="stat-icon peach">◷</span><span class="stat-trend">So far</span></div>
+            <p class="stat-label">Leave used</p>
+            <div class="stat-value">3 <span>days</span></div>
+            <div class="stat-foot">Across 2 applications</div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-top"><span class="stat-icon mint">✓</span><span
+                class="stat-trend positive">Available</span></div>
+            <p class="stat-label">Remaining leave</p>
+            <div class="stat-value">9.999999 <span>days</span></div>
+            <div class="stat-foot">Plan your leave ahead</div>
+          </article>
+          <article class="stat-card">
+            <div class="stat-top"><span class="stat-icon blue">⌛</span><span class="stat-trend">Awaiting review</span>
+            </div>
+            <p class="stat-label">Pending requests</p>
+            <div class="stat-value">1 <span>request</span></div>
+            <div class="stat-foot">Usually reviewed in 2 days</div>
+          </article>
+        </section>
+        <div class="dashboard-grid">
+          <section class="panel recent-panel">
+            <div class="panel-heading">
+              <div>
+                <h2>Recent leave requests</h2>
+                <p class="muted">A quick look at your latest applications.</p>
+              </div><a class="inline-link" href="leave-history.html">View history →</a>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Leave type</th>
+                    <th>Dates</th>
+                    <th>Days</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="table-primary">Personal leave</span><span
+                        class="table-secondary">CL-2026-014</span></td>
+                    <td>12 Oct – 13 Oct</td>
+                    <td>2</td>
+                    <td><span class="status status-pending">Pending</span></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="table-primary">Medical leave</span>
+                      <span class="table-secondary">CL-2026-009</span>
+                    </td>
+                     <td>2</td>
+                    <td><span class="status status-approved">Approved</span></td>
+                   
+                   
+                    <td>21 Sep – 22 Sep</td>
+                    
+                    
+                  </tr>
+                  <tr>
+                    <td><span class="table-primary">Personal leave</span><span
+                        class="table-secondary">CL-2026-004</span></td>
+                    <td>03 Aug</td>
+                    <td>1</td>
+                    <td><span class="status status-approved">Approved</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <aside class="panel notices-panel">
+            <div class="panel-heading">
+              <div>
+                <h2>Campus notices</h2>
+                <p class="muted">Important updates for students.</p>
+              </div><a class="inline-link" href="notices.html">All notices</a>
+            </div>
+            <article class="notice-item"><span class="notice-dot dot-purple"></span>
+              <div><span class="notice-date">08 OCT 2026</span>
+                <h3>Mid-semester attendance reminder</h3>
+                <p>Review your attendance before applying for leave.</p>
+              </div>
+            </article>
+            <article class="notice-item"><span class="notice-dot dot-orange"></span>
+              <div><span class="notice-date">06 OCT 2026</span>
+                <h3>Leave applications during exams</h3>
+                <p>Additional approval may be required during examinations.</p>
+              </div>
+            </article>
+            <article class="notice-item"><span class="notice-dot dot-green"></span>
+              <div><span class="notice-date">02 OCT 2026</span>
+                <h3>Update your student profile</h3>
+                <p>Keep your contact information up to date.</p>
+              </div>
+            </article>
+          </aside>
+        </div>
+        <footer class="page-footer">© 2026 CampusLeave <span>Made for a smoother campus experience.</span></footer>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
